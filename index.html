@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biome Care 3-0-6 — Product Label</title>
+<meta name="description" content="Full, legible text of the Biome Care 3-0-6 back label — guaranteed analysis, directions, cautions, and warranty.">
+<style>
+:root{
+  --bg:#fbf9f4;
+  --surface:#ffffff;
+  --ink:#201a12;
+  --ink-muted:#6b6152;
+  --accent-gold:#b9791f;
+  --accent-navy:#1e3d59;
+  --warn-bg:#fdecec;
+  --warn-ink:#7a1f1f;
+  --warn-border:#e3a3a3;
+  --rule:#e6ddc7;
+  --qr-panel:#ffffff;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15130d;
+    --surface:#211c14;
+    --ink:#f1ebdd;
+    --ink-muted:#b6ab95;
+    --accent-gold:#e0a94b;
+    --accent-navy:#7fb0e6;
+    --warn-bg:#3a1717;
+    --warn-ink:#f4bcbc;
+    --warn-border:#6b2b2b;
+    --rule:#3a3325;
+    --qr-panel:#f1ebdd;
+  }
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{
+  max-width:760px;
+  margin:0 auto;
+  padding:2rem 1.25rem 4rem;
+}
+.masthead{
+  display:flex;
+  flex-direction:column;
+  gap:.35rem;
+  padding-bottom:1.25rem;
+  border-bottom:3px solid var(--accent-gold);
+  margin-bottom:1.75rem;
+}
+.eyebrow{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-muted);
+}
+h1{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-weight:800;
+  font-size:clamp(2.1rem,7vw,2.9rem);
+  letter-spacing:-.01em;
+  color:var(--accent-gold);
+  margin:0;
+  text-wrap:balance;
+}
+.formula{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-weight:800;
+  font-size:1.4rem;
+  color:var(--accent-gold);
+}
+.tagline{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-weight:700;
+  font-size:1rem;
+  letter-spacing:.02em;
+}
+.subline{
+  font-size:.95rem;
+  color:var(--ink-muted);
+  font-style:italic;
+}
+
+section{
+  margin-bottom:1.75rem;
+}
+h2{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.95rem;
+  font-weight:700;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+  color:var(--accent-navy);
+  margin:0 0 .7rem;
+  padding-bottom:.4rem;
+  border-bottom:1px solid var(--rule);
+}
+p{margin:.4rem 0;}
+ul{margin:.4rem 0;padding-left:1.2rem;}
+li{margin:.35rem 0;}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-radius:8px;
+  padding:1rem 1.15rem;
+}
+
+.analysis-line{
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-variant-numeric:tabular-nums;
+  border-bottom:1px dotted var(--rule);
+  padding:.3rem 0;
+}
+.analysis-line:last-of-type{border-bottom:none;}
+.analysis-line b{font-weight:700;}
+.analysis-sub{
+  font-size:.85rem;
+  color:var(--ink-muted);
+  padding-left:1rem;
+}
+.derived{
+  margin-top:.75rem;
+  padding-top:.6rem;
+  border-top:1px solid var(--rule);
+  font-size:.9rem;
+}
+.derived b{font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;font-weight:700;}
+
+.table-scroll{
+  overflow-x:auto;
+  border:1px solid var(--rule);
+  border-radius:8px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.88rem;
+  min-width:520px;
+}
+th{
+  text-align:left;
+  background:var(--accent-navy);
+  color:#fff;
+  padding:.6rem .75rem;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+td{
+  padding:.6rem .75rem;
+  border-top:1px solid var(--rule);
+  vertical-align:top;
+}
+tr:nth-child(even) td{background:color-mix(in srgb, var(--accent-navy) 4%, transparent);}
+
+.warn{
+  background:var(--warn-bg);
+  border:1px solid var(--warn-border);
+  color:var(--warn-ink);
+  border-radius:8px;
+  padding:1rem 1.15rem;
+}
+.warn h2{color:var(--warn-ink);border-bottom-color:var(--warn-border);}
+.warn strong.shout{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  letter-spacing:.02em;
+}
+
+.legal{
+  font-size:.82rem;
+  color:var(--ink-muted);
+}
+
+.meta-strip{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem 1.5rem;
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.85rem;
+}
+.meta-strip .label{color:var(--ink-muted);text-transform:uppercase;letter-spacing:.06em;font-size:.7rem;display:block;}
+
+footer{
+  margin-top:2.5rem;
+  padding-top:1.5rem;
+  border-top:1px solid var(--rule);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.75rem;
+  text-align:center;
+}
+footer .qr-box{
+  background:var(--qr-panel);
+  padding:.6rem;
+  border-radius:10px;
+  border:1px solid var(--rule);
+  line-height:0;
+}
+footer .qr-box img{display:block;width:132px;height:132px;image-rendering:pixelated;}
+footer .foot-note{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-muted);
+}
+
+a{color:var(--accent-navy);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead">
+    <span class="eyebrow">Guaranteed by Madam Bio-Genetix LLC</span>
+    <h1>BIOME CARE</h1>
+    <div class="formula">3-0-6 &nbsp;·&nbsp; ADD LIFE TO SOIL</div>
+    <div class="tagline">Potassium + Seaweed Plant Food</div>
+    <div class="subline">For Home &amp; Garden Use</div>
+  </div>
+
+  <section>
+    <h2>Guaranteed Analysis</h2>
+    <div class="card">
+      <div class="analysis-line"><span>Total Nitrogen (N)</span><b>3.00%</b></div>
+      <div class="analysis-sub">3.00% Urea Nitrogen</div>
+      <div class="analysis-line"><span>Soluble Potash (K₂O)</span><b>6.00%</b></div>
+      <div class="derived">
+        <b>Derived from:</b> Urea, Potassium Acetate, Seaweed Extract (<i>Ascophyllum nodosum</i>), and Potassium Hydroxide.
+      </div>
+      <div class="derived">
+        <b>Also contains beneficial substance(s):</b> Seaweed Extract (<i>Ascophyllum nodosum</i>) — 25%
+      </div>
+      <div class="derived">Weight per Gallon: 9.2 lbs/gal @ 68°F</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Purpose &amp; General Information</h2>
+    <p><b>Purpose:</b> A liquid potassium plant food with seaweed for home and garden use — lawns, vegetables (including tomatoes), flowers, trees, shrubs, vines, fruit trees, and container plants — that feeds both plants and soil life for strong, vigorous growth and improved stress resilience.</p>
+    <p>Biome Care pairs readily available potassium and nitrogen with <i>Ascophyllum nodosum</i> seaweed extract, which serves as a food source for beneficial soil microbes. It disperses readily in most fertilizer and micronutrient mixes and can be applied with a watering can, hose-end sprayer, or drip and irrigation systems.</p>
+    <p><b>Shake well before use.</b></p>
+  </section>
+
+  <section>
+    <h2>Directions for Use</h2>
+    <p>Shake well before using. Dilute in water as shown below and apply to the soil and root zone. Water in after applying. Do not exceed the recommended rates.</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Plants / Area</th><th>Mix or Rate</th><th>How Often</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lawns &amp; turf</td><td>6–10 oz in water per 1,000 sq. ft.</td><td>Every 2–3 weeks</td></tr>
+          <tr><td>Vegetables, tomatoes &amp; flowers</td><td>2–4 oz per gallon of water; apply to the soil</td><td>Every 1–2 weeks</td></tr>
+          <tr><td>Peppers &amp; curry leaves</td><td>8 fl. oz per gallon of water; apply to the soil</td><td>Every 1–2 weeks</td></tr>
+          <tr><td>Trees, shrubs, vines &amp; fruit trees</td><td>4–6 oz per gallon of water; apply to the root zone</td><td>Every 2–3 weeks</td></tr>
+          <tr><td>Containers &amp; houseplants</td><td>1–2 oz per gallon of water</td><td>Every 2–4 weeks</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Recommendations &amp; Best Practices</h2>
+    <ul>
+      <li>Shake well before each use — the seaweed fraction can settle between applications.</li>
+      <li>Apply in the early morning or evening, and avoid spraying in full sun or high heat.</li>
+      <li>Water in after soil applications to carry nutrients down to the root zone.</li>
+      <li>Do not over-apply — salt injury or foliar burn can occur if recommended rates are exceeded.</li>
+      <li>Feeds soil microbes as well as plants; reapply through the growing season for best results.</li>
+      <li>Run a small jar test for compatibility before tank-mixing with other products.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="warn">
+      <h2>Caution</h2>
+      <p><strong class="shout">WARNING — KEEP OUT OF REACH OF CHILDREN.</strong></p>
+      <p>Causes skin irritation and serious eye irritation. Avoid breathing mist, spray, or vapor. Wear eye protection and protective gloves; use only outdoors or in a well-ventilated area; wash thoroughly after handling.</p>
+      <p><b>First Aid</b> — If in eyes: rinse cautiously with water for several minutes; remove contact lenses if present and continue rinsing. If on skin: wash with plenty of water; take off contaminated clothing. If irritation persists, get medical advice/attention.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Storage &amp; Disposal</h2>
+    <p>Store in a cool, well-ventilated place away from incompatible materials; keep the container tightly closed and protect from freezing. Do not contaminate water, food, or feed by storage or disposal. Dispose of contents and container in accordance with local authority requirements.</p>
+  </section>
+
+  <section>
+    <h2>Conditions of Sale and Warranty</h2>
+    <p class="legal">Madam Bio-Genetix LLC warrants that the chemical composition of this product conforms to the chemical description on this label. THIS WARRANTY IS EXPRESSLY IN LIEU OF ALL OTHER WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR USE. Timing, rate and method of application, weather and growing conditions, and mixtures with products not specifically recommended on this label are beyond the Seller's control, and the Buyer assumes all risks of use, storage, and handling not in strict accordance with these directions. In no case shall the Seller be liable for consequential, special, indirect, or incidental damages. The Buyer's exclusive remedy, at the Buyer's option, is replacement of the product or refund of the purchase price.</p>
+    <p class="legal"><b>Internet Statement:</b> Information regarding the contents and levels of metals in this product is available on the internet at: <a href="https://www.aapfco.org/metals.html">aapfco.org/metals.html</a></p>
+  </section>
+
+  <section>
+    <h2>Product Details</h2>
+    <div class="meta-strip">
+      <div><span class="label">Net Contents</span>1 Pint (0.47 L) · 1 Quart (0.95 L) · 2.5 Gallons (9.46 L)</div>
+      <div><span class="label">Guaranteed By</span>Madam Bio-Genetix LLC, 8535 Bulkley Road, Dixon, CA 95620</div>
+      <div><span class="label">UPC</span>1 99284 74540 3</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="qr-box"><img id="qr-img" alt="QR code linking to this page"></div>
+    <div class="foot-note">Scan to reopen this label · full-size, zoomable text</div>
+    <div class="foot-note" id="qr-url"></div>
+  </footer>
+</div>
+
+<script src="qrcode.js"></script>
+<script>
+  var url = window.location.href;
+  var qr = qrcode(0, 'M');
+  qr.addData(url);
+  qr.make();
+  document.getElementById('qr-img').src = qr.createDataURL(6, 4);
+  document.getElementById('qr-url').textContent = url;
+</script>
+</body>
+</html>
