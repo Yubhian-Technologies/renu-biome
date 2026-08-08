@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PACEX 0-0-17 — Product Label</title>
+<meta name="description" content="Full, legible text of the PACEX 0-0-17 back label — guaranteed analysis, directions, cautions, first aid, and warranty.">
+<style>
+:root{
+  --bg:#f8faf6;
+  --surface:#ffffff;
+  --ink:#182016;
+  --ink-muted:#5f6b5a;
+  --accent-green:#1e6b3a;
+  --accent-green-deep:#134a28;
+  --warn-bg:#fdecec;
+  --warn-ink:#8a1f1f;
+  --warn-border:#e3a3a3;
+  --rule:#dbe6d8;
+  --qr-panel:#ffffff;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#10160f;
+    --surface:#1a221a;
+    --ink:#eaf0e6;
+    --ink-muted:#a9b6a2;
+    --accent-green:#4fbf78;
+    --accent-green-deep:#7fd39a;
+    --warn-bg:#3a1717;
+    --warn-ink:#f4bcbc;
+    --warn-border:#6b2b2b;
+    --rule:#2c3a29;
+    --qr-panel:#eaf0e6;
+  }
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{
+  max-width:760px;
+  margin:0 auto;
+  padding:2rem 1.25rem 4rem;
+}
+.masthead{
+  display:flex;
+  flex-direction:column;
+  gap:.35rem;
+  padding-bottom:1.25rem;
+  border-bottom:3px solid var(--accent-green);
+  margin-bottom:1.75rem;
+}
+.eyebrow{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-muted);
+}
+h1{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-weight:800;
+  font-size:clamp(2.1rem,7vw,2.9rem);
+  letter-spacing:-.01em;
+  color:var(--accent-green-deep);
+  margin:0;
+  text-wrap:balance;
+}
+.formula{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-weight:800;
+  font-size:1.4rem;
+  color:var(--accent-green);
+}
+.tagline{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-weight:700;
+  font-size:1rem;
+  letter-spacing:.02em;
+  font-style:italic;
+}
+.subline{
+  font-size:.95rem;
+  color:var(--ink-muted);
+}
+
+section{
+  margin-bottom:1.75rem;
+}
+h2{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.95rem;
+  font-weight:700;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+  color:var(--accent-green-deep);
+  margin:0 0 .7rem;
+  padding-bottom:.4rem;
+  border-bottom:1px solid var(--rule);
+}
+p{margin:.4rem 0;}
+ul{margin:.4rem 0;padding-left:1.2rem;}
+li{margin:.35rem 0;}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-radius:8px;
+  padding:1rem 1.15rem;
+}
+
+.analysis-line{
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-variant-numeric:tabular-nums;
+  border-bottom:1px dotted var(--rule);
+  padding:.3rem 0;
+}
+.analysis-line:last-of-type{border-bottom:none;}
+.analysis-line b{font-weight:700;}
+.analysis-sub{
+  font-size:.85rem;
+  color:var(--ink-muted);
+  padding-left:1rem;
+}
+.subhead{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-weight:700;
+  font-size:.8rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:var(--ink-muted);
+  margin:.85rem 0 .3rem;
+}
+.derived{
+  margin-top:.75rem;
+  padding-top:.6rem;
+  border-top:1px solid var(--rule);
+  font-size:.9rem;
+}
+.derived b{font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;font-weight:700;}
+
+.table-scroll{
+  overflow-x:auto;
+  border:1px solid var(--rule);
+  border-radius:8px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.86rem;
+  min-width:520px;
+}
+th{
+  text-align:left;
+  background:var(--accent-green-deep);
+  color:#fff;
+  padding:.6rem .75rem;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+td{
+  padding:.6rem .75rem;
+  border-top:1px solid var(--rule);
+  vertical-align:top;
+}
+td:first-child{font-weight:700;white-space:nowrap;}
+tr:nth-child(even) td{background:color-mix(in srgb, var(--accent-green) 6%, transparent);}
+
+.warn{
+  background:var(--warn-bg);
+  border:1px solid var(--warn-border);
+  color:var(--warn-ink);
+  border-radius:8px;
+  padding:1rem 1.15rem;
+}
+.warn h2{color:var(--warn-ink);border-bottom-color:var(--warn-border);}
+.warn strong.shout{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  letter-spacing:.02em;
+}
+
+.legal{
+  font-size:.82rem;
+  color:var(--ink-muted);
+}
+
+.net-contents{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.75rem;
+}
+.net-contents .box{
+  flex:1 1 120px;
+  border:1px solid var(--rule);
+  border-radius:8px;
+  padding:.6rem .8rem;
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.85rem;
+  text-align:center;
+}
+.net-contents .box b{display:block;font-size:.95rem;margin-top:.15rem;}
+
+.meta-strip{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem 1.5rem;
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.85rem;
+  margin-top:1rem;
+}
+.meta-strip .label{color:var(--ink-muted);text-transform:uppercase;letter-spacing:.06em;font-size:.7rem;display:block;}
+
+footer{
+  margin-top:2.5rem;
+  padding-top:1.5rem;
+  border-top:1px solid var(--rule);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.75rem;
+  text-align:center;
+}
+footer .qr-box{
+  background:var(--qr-panel);
+  padding:.6rem;
+  border-radius:10px;
+  border:1px solid var(--rule);
+  line-height:0;
+}
+footer .qr-box img{display:block;width:132px;height:132px;image-rendering:pixelated;}
+footer .foot-note{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-muted);
+}
+
+a{color:var(--accent-green-deep);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead">
+    <span class="eyebrow">Guaranteed by Madam Bio-Genetix LLC</span>
+    <h1>PACEX</h1>
+    <div class="formula">0-0-17 &nbsp;·&nbsp; Growth Amplified</div>
+    <div class="tagline">Liquid Fertilizer</div>
+    <div class="subline">For Home &amp; Garden Use</div>
+  </div>
+
+  <section>
+    <h2>Guaranteed Analysis</h2>
+    <div class="card">
+      <div class="analysis-line"><span>Soluble Potash (K₂O)</span><b>17.00%</b></div>
+      <div class="derived"><b>Derived from:</b> Potassium Acetate.</div>
+      <div class="subhead">Also contains beneficial substance(s)</div>
+      <div class="analysis-line"><span>Seaweed Extract</span><b>2.00%</b></div>
+      <div class="analysis-line"><span>L-Proline (amino acid)</span><b>1.00%</b></div>
+      <div class="analysis-line"><span>Saponins from <i>Yucca schidigera</i></span><b>1.00%</b></div>
+      <div class="derived">Weight per Gallon: 9.1 lbs @ 68°F</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Purpose</h2>
+    <p>PACEX is a liquid potassium fertilizer with beneficial substances, formulated to support plant nutrition, vigor, and stress resilience in lawns, vegetables, flowers, shrubs, trees, and container plants.</p>
+  </section>
+
+  <section>
+    <h2>Mixing &amp; Handling Instructions</h2>
+    <p>Shake well before use. Fill mix tank or container with half of the required water volume and begin agitation. Add products in this order, mixing thoroughly after each addition: adjuvants, pesticides, then fertilizers. Add remaining water and mix until uniform. Check chemical compatibility using a jar test prior to application.</p>
+    <p><b>Caution:</b> Do not apply directly on or in contact with seed. Do not exceed recommended rates; salt injury or foliar burn may occur if over-applied.</p>
+  </section>
+
+  <section>
+    <h2>Directions for Use</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Plants / Area</th><th>Mix or Rate</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lawns &amp; Turf</td><td>Mix 12–16 oz in water and apply per 1,000 sq. ft. every 7–14 days.</td></tr>
+          <tr><td>Vegetables &amp; Flowers</td><td>Mix 2–4 oz per gallon of water and apply to the soil every 1–2 weeks.</td></tr>
+          <tr><td>Trees, Shrubs &amp; Vines</td><td>Mix 6–8 oz per gallon of water and apply to the root zone every 1–2 weeks.</td></tr>
+          <tr><td>Container &amp; Houseplants</td><td>Mix 1–2 oz per gallon of water and apply every 2–4 weeks.</td></tr>
+          <tr><td>Foliar Feeding</td><td>Dilute 1–2 oz per gallon of water and spray to lightly coat foliage every 1–2 weeks.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Test a small area first; avoid spraying in full sun or high heat. Do not exceed recommended rates.</p>
+  </section>
+
+  <section>
+    <div class="warn">
+      <h2>Caution</h2>
+      <p><strong class="shout">CAUTION — KEEP OUT OF REACH OF CHILDREN AND PETS.</strong></p>
+      <p>Do not ingest. Avoid contact with eyes; wash hands after use.</p>
+      <p><b>First Aid</b> — If in eyes: rinse with water for several minutes. If irritation occurs or persists, seek medical advice/attention.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Precautionary Statements</h2>
+    <p><b>Keep out of reach of children.</b> Avoid contact with eyes, skin, and clothing. Avoid breathing spray mist or vapor. Wear protective eyewear and gloves when handling. Wash thoroughly after handling. Keep container closed.</p>
+  </section>
+
+  <section>
+    <h2>First Aid</h2>
+    <p><b>If in eyes:</b> Hold eye open and rinse slowly and gently with water for 15–20 minutes. Remove contact lenses after the first 5 minutes, then continue rinsing. Call a poison control center or doctor for treatment advice.</p>
+    <p><b>If on skin or clothing:</b> Take off contaminated clothing. Rinse skin with plenty of water for 15–20 minutes.</p>
+    <p><b>If swallowed:</b> Rinse mouth. Do not induce vomiting unless directed by a poison control center or doctor. Call a poison control center or doctor.</p>
+    <p><b>If inhaled:</b> Move person to fresh air.</p>
+  </section>
+
+  <section>
+    <h2>Storage &amp; Disposal</h2>
+    <p>Do not contaminate water, food or feed by storage or disposal. Store away from incompatible materials. Dispose of contents/container in accordance with local authority requirements.</p>
+  </section>
+
+  <section>
+    <h2>Limited Warranty</h2>
+    <p class="legal">Madam Bio-Genetix LLC warrants that the Product conforms to the chemical description given on this label and is reasonably fit for the purpose stated when used in accordance with label directions under normal conditions of use. Buyer and User accept all risks arising from any use of this Product. To the extent allowed by law, the Seller shall not be liable to the Buyer or User of this Product for any consequential, special, incidental, or indirect damages.</p>
+  </section>
+
+  <section>
+    <h2>Product Details</h2>
+    <div class="net-contents">
+      <div class="box">Net Contents<b>1 Pint (473 mL)</b></div>
+      <div class="box">Net Contents<b>1 Quart (946 mL)</b></div>
+      <div class="box">Net Contents<b>1 Gallon (3.79 L)</b></div>
+      <div class="box">Net Contents<b>Bulk</b></div>
+    </div>
+    <div class="meta-strip">
+      <div><span class="label">Guaranteed By</span>Madam Bio-Genetix LLC, 8535 Bulkley Road, Dixon, CA 95620</div>
+      <div><span class="label">UPC</span>1 98713 28031 9</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="qr-box"><img id="qr-img" alt="QR code linking to this page"></div>
+    <div class="foot-note">Scan to reopen this label · full-size, zoomable text</div>
+    <div class="foot-note" id="qr-url"></div>
+  </footer>
+</div>
+
+<script src="../qrcode.js"></script>
+<script>
+  var url = window.location.href;
+  var qr = qrcode(0, 'M');
+  qr.addData(url);
+  qr.make();
+  document.getElementById('qr-img').src = qr.createDataURL(6, 4);
+  document.getElementById('qr-url').textContent = url;
+</script>
+</body>
+</html>
