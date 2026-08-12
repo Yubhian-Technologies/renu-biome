@@ -80,16 +80,39 @@ h1{
   font-size:1.4rem;
   color:var(--accent-green);
 }
-.tagline{
-  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
-  font-weight:700;
-  font-size:1rem;
-  letter-spacing:.02em;
-}
 .subline{
   font-size:.95rem;
   color:var(--ink-muted);
   font-style:italic;
+}
+.brandmark{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  margin-bottom:.6rem;
+}
+.brandmark svg{flex:none;}
+.brandmark .brandtext{
+  display:flex;
+  flex-direction:column;
+  line-height:1.05;
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+.brandmark .brandname{
+  font-weight:800;
+  font-size:1.15rem;
+  letter-spacing:-.01em;
+  color:#1e7a3c;
+}
+.brandmark .brandtag{
+  font-weight:600;
+  font-size:.62rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#1e7a3c;
+}
+@media (prefers-color-scheme: dark){
+  .brandmark .brandname,.brandmark .brandtag{color:#5fca85;}
 }
 
 section{
@@ -242,11 +265,19 @@ a{color:var(--accent-green-deep);}
 <body>
 <div class="wrap">
   <div class="masthead">
-    <span class="eyebrow">Guaranteed by Madam Bio-Genetix LLC</span>
+    <div class="brandmark">
+      <svg width="30" height="30" viewBox="0 0 32 32" role="img" aria-label="ReNu-Biome leaf mark">
+        <path d="M28 5C16 6 7 12 6 24c6-2 8-6 9-10-3 6-2 9-2 9 9-1 15-8 15-18z" fill="#1e7a3c"/>
+        <path d="M4 20l4 4 9-11-7 6z" fill="#d1462f"/>
+      </svg>
+      <div class="brandtext">
+        <span class="brandname">ReNu-Biome</span>
+        <span class="brandtag">Advanced Crop Nutrition</span>
+      </div>
+    </div>
     <h1>N-CARE</h1>
     <div class="formula">23-0-0 &nbsp;·&nbsp; GREEN NITROGEN</div>
-    <div class="tagline">Liquid Nitrogen Plant Food</div>
-    <div class="subline">For Home &amp; Garden Use</div>
+    <div class="subline">Home &amp; Garden Use</div>
   </div>
 
   <section>
